@@ -18,8 +18,29 @@
 
 #include "src/CH55x_QMK_Lite.h"
 
+#define BUTTON_PIN 15
+
+void bootloaderRoutine() {
+  USB_CTRL = 0;
+  EA = 0;  //Disabling all interrupts is required.
+  TMOD = 0;
+  __asm__("lcall #0x3800");  //Jump to bootloader code
+}
+
 void setup() {
   delay(1000);
+
+  { //initialize the keys or matrix.
+    pinMode(BUTTON_PIN, INPUT_PULLUP);
+  }
+
+  {
+    if (!digitalRead(BUTTON_PIN)) {
+      //Enter bootloader
+      bootloaderRoutine();
+    }
+  }
+
   ch55xQmkLite_init();
 }
 

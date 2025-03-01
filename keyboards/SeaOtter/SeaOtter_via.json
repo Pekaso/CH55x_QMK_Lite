@@ -1,0 +1,38 @@
+{
+  "name": "SeaOtter SP01",
+  "vendorId": "0x5262",
+  "productId": "0x5217",
+  "matrix": {"rows": 1, "cols": 1},
+  "layouts": {
+    "keymap": [
+      ["0,0"]
+    ]
+  },
+  "menus": [
+    {
+      "label": "System Settings",
+      "content": [
+        {
+          "label": "Factory reset",
+          "content": [
+            {
+              "label": "Restore factory settings",
+              "type": "toggle",
+              "content": ["id_system_eeprom_reset", 6, 1]
+            }
+          ]
+        },
+        {
+          "label": "Update",
+          "content": [
+            {
+              "label": "Enter boot loader",
+              "type": "toggle",
+              "content": ["id_system_bootloader_jump", 6, 2]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
