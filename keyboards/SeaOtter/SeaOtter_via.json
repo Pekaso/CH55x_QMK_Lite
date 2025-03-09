@@ -1,7 +1,7 @@
 {
   "name": "SeaOtter SP01",
-  "vendorId": "0x5262",
-  "productId": "0x5217",
+  "vendorId": "FEED",
+  "productId": "0772",
   "matrix": {"rows": 1, "cols": 1},
   "layouts": {
     "keymap": [

@@ -1,7 +1,7 @@
 #pragma once
 
-#define VENDOR_ID       0x5262    
-#define PRODUCT_ID      0x5217                  //VENDOR_ID和PRODUCT_ID组成键盘的唯一编号，和json文件设成一样，VIA设置软件靠这个编号识别
+#define VENDOR_ID       0xFEED    
+#define PRODUCT_ID      0x0772                  //VENDOR_ID和PRODUCT_ID组成键盘的唯一编号，和json文件设成一样，VIA设置软件靠这个编号识别
 #define MANUFACTURER    'L','o','F','i'     //键盘厂商
 #define PRODUCT         'S','e','a','O','t','t','e','r',' ','K','e','y','b','o','a','r','d'         //键盘名称
 

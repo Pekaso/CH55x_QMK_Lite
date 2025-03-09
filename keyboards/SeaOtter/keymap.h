@@ -4,6 +4,6 @@
 // clang-format off
 
 #define KEY_MAPS {								    \
-   {{LSFT(LCTL(KC_M))},}	\
+   {{LCTL(KC_S)},}	\
 };												    \
 // clang-format on
